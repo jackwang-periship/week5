@@ -1,0 +1,75 @@
+2017-06-30 16:53:14,973 [DEBUG] cassandra.cluster: Connecting to cluster, contact points: ['127.0.0.1']; protocol version: 4
+2017-06-30 16:53:14,973 [DEBUG] cassandra.io.asyncorereactor: Validated loop dispatch with <class 'cassandra.io.asyncorereactor._BusyWaitDispatcher'>
+2017-06-30 16:53:14,974 [DEBUG] cassandra.pool: Host 127.0.0.1 is now marked up
+2017-06-30 16:53:14,974 [DEBUG] cassandra.cluster: [control connection] Opening new connection to 127.0.0.1
+2017-06-30 16:53:14,976 [DEBUG] cassandra.connection: Not sending options message for new connection(62794216) to 127.0.0.1 because compression is disabled and a cql version was not specified
+2017-06-30 16:53:14,976 [DEBUG] cassandra.connection: Sending StartupMessage on <AsyncoreConnection(62794216L) 127.0.0.1:9042>
+2017-06-30 16:53:14,977 [DEBUG] cassandra.connection: Sent StartupMessage on <AsyncoreConnection(62794216L) 127.0.0.1:9042>
+2017-06-30 16:53:14,977 [DEBUG] cassandra.io.asyncorereactor: Starting asyncore event loop
+2017-06-30 16:53:14,979 [DEBUG] cassandra.connection: Got ReadyMessage on new connection (62794216) from 127.0.0.1
+2017-06-30 16:53:14,982 [DEBUG] cassandra.cluster: [control connection] Established new connection <AsyncoreConnection(62794216L) 127.0.0.1:9042>, registering watchers and refreshing schema and topology
+2017-06-30 16:53:14,993 [DEBUG] cassandra.cluster: [control connection] Refreshing node list and token map using preloaded results
+2017-06-30 16:53:14,993 [INFO] cassandra.policies: Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2017-06-30 16:53:15,000 [DEBUG] cassandra.cluster: [control connection] Finished fetching ring info
+2017-06-30 16:53:15,000 [DEBUG] cassandra.cluster: [control connection] Rebuilding token map due to topology changes
+2017-06-30 16:53:15,029 [DEBUG] cassandra.cluster: Control connection created
+2017-06-30 16:53:15,030 [DEBUG] cassandra.pool: Initializing connection for host 127.0.0.1
+2017-06-30 16:53:15,030 [DEBUG] cassandra.connection: Not sending options message for new connection(63473760) to 127.0.0.1 because compression is disabled and a cql version was not specified
+2017-06-30 16:53:15,032 [DEBUG] cassandra.connection: Sending StartupMessage on <AsyncoreConnection(63473760L) 127.0.0.1:9042>
+2017-06-30 16:53:15,032 [DEBUG] cassandra.connection: Sent StartupMessage on <AsyncoreConnection(63473760L) 127.0.0.1:9042>
+2017-06-30 16:53:15,032 [DEBUG] cassandra.connection: Got ReadyMessage on new connection (63473760) from 127.0.0.1
+2017-06-30 16:53:15,036 [DEBUG] cassandra.pool: Finished initializing connection for host 127.0.0.1
+2017-06-30 16:53:15,036 [DEBUG] cassandra.cluster: Added pool for host 127.0.0.1 to session
+2017-06-30 16:53:15,042 [INFO] root: creating keyspace...
+2017-06-30 16:53:15,095 [DEBUG] cassandra.connection: Message pushed from server: <EventMessage(event_type=u'SCHEMA_CHANGE', trace_id=None, event_args={'keyspace': u'testkeyspace', 'change_type': u'CREATED', 'target_type': u'KEYSPACE'}, stream_id=-1)>
+2017-06-30 16:53:15,111 [DEBUG] cassandra.cluster: Refreshing schema in response to schema change. {'keyspace': u'testkeyspace', 'change_type': u'CREATED', 'target_type': u'KEYSPACE'}
+2017-06-30 16:53:15,111 [DEBUG] cassandra.cluster: [control connection] Waiting for schema agreement
+2017-06-30 16:53:15,119 [DEBUG] cassandra.cluster: [control connection] Schemas match
+2017-06-30 16:53:15,125 [INFO] root: setting keyspace...
+2017-06-30 16:53:15,128 [INFO] root: creating table...
+2017-06-30 16:53:15,250 [DEBUG] cassandra.connection: Message pushed from server: <EventMessage(event_type=u'SCHEMA_CHANGE', trace_id=None, event_args={'keyspace': u'testkeyspace', 'change_type': u'UPDATED', 'target_type': u'KEYSPACE'}, stream_id=-1)>
+2017-06-30 16:53:15,275 [DEBUG] cassandra.connection: Message pushed from server: <EventMessage(event_type=u'SCHEMA_CHANGE', trace_id=None, event_args={'keyspace': u'testkeyspace', 'change_type': u'CREATED', 'target_type': u'TABLE', u'table': u'mytable'}, stream_id=-1)>
+2017-06-30 16:53:15,289 [DEBUG] cassandra.cluster: Refreshing schema in response to schema change. {'keyspace': u'testkeyspace', 'change_type': u'CREATED', 'target_type': u'TABLE', u'table': u'mytable'}
+2017-06-30 16:53:15,289 [DEBUG] cassandra.cluster: [control connection] Waiting for schema agreement
+2017-06-30 16:53:15,296 [DEBUG] cassandra.cluster: [control connection] Schemas match
+2017-06-30 16:53:15,309 [INFO] root: inserting row 0
+2017-06-30 16:53:15,351 [INFO] root: inserting row 1
+2017-06-30 16:53:15,358 [INFO] root: inserting row 2
+2017-06-30 16:53:15,367 [INFO] root: inserting row 3
+2017-06-30 16:53:15,374 [INFO] root: inserting row 4
+2017-06-30 16:53:15,381 [INFO] root: inserting row 5
+2017-06-30 16:53:15,388 [INFO] root: inserting row 6
+2017-06-30 16:53:15,394 [INFO] root: inserting row 7
+2017-06-30 16:53:15,401 [INFO] root: inserting row 8
+2017-06-30 16:53:15,408 [INFO] root: inserting row 9
+2017-06-30 16:53:15,414 [INFO] root: key	col1	col2
+2017-06-30 16:53:15,414 [INFO] root: ---	----	----
+2017-06-30 16:53:15,428 [INFO] root: key5	a	b
+2017-06-30 16:53:15,428 [INFO] root: key5	b	b
+2017-06-30 16:53:15,428 [INFO] root: key6	a	b
+2017-06-30 16:53:15,428 [INFO] root: key6	b	b
+2017-06-30 16:53:15,428 [INFO] root: key0	a	b
+2017-06-30 16:53:15,428 [INFO] root: key0	b	b
+2017-06-30 16:53:15,428 [INFO] root: key1	a	b
+2017-06-30 16:53:15,430 [INFO] root: key1	b	b
+2017-06-30 16:53:15,430 [INFO] root: key9	a	b
+2017-06-30 16:53:15,430 [INFO] root: key9	b	b
+2017-06-30 16:53:15,430 [INFO] root: key4	a	b
+2017-06-30 16:53:15,430 [INFO] root: key4	b	b
+2017-06-30 16:53:15,430 [INFO] root: key8	a	b
+2017-06-30 16:53:15,430 [INFO] root: key8	b	b
+2017-06-30 16:53:15,430 [INFO] root: key3	a	b
+2017-06-30 16:53:15,430 [INFO] root: key3	b	b
+2017-06-30 16:53:15,430 [INFO] root: key7	a	b
+2017-06-30 16:53:15,430 [INFO] root: key7	b	b
+2017-06-30 16:53:15,430 [INFO] root: key2	a	b
+2017-06-30 16:53:15,430 [INFO] root: key2	b	b
+2017-06-30 16:53:15,430 [DEBUG] cassandra.io.asyncorereactor: Waiting for event loop thread to join...
+2017-06-30 16:53:15,431 [DEBUG] cassandra.io.asyncorereactor: Asyncore event loop ended
+2017-06-30 16:53:15,434 [DEBUG] cassandra.io.asyncorereactor: Event loop thread was joined
+2017-06-30 16:53:15,450 [DEBUG] cassandra.cluster: Shutting down Cluster Scheduler
+2017-06-30 16:53:15,496 [DEBUG] cassandra.cluster: Shutting down control connection
+2017-06-30 16:53:15,496 [DEBUG] cassandra.io.asyncorereactor: Closing connection (62794216) to 127.0.0.1
+2017-06-30 16:53:15,497 [DEBUG] cassandra.io.asyncorereactor: Closed socket to 127.0.0.1
+2017-06-30 16:53:15,497 [DEBUG] cassandra.io.asyncorereactor: Closing connection (63473760) to 127.0.0.1
+2017-06-30 16:53:15,499 [DEBUG] cassandra.io.asyncorereactor: Closed socket to 127.0.0.1
